@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  //font-size: calc(1vw / 3.75);
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+  scrollbar-width: none;
+  display: none;
+}
+
+::-webkit-credentials-auto-fill-button {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    font-size: calc(1vw / 14.4);
+  }
+}
