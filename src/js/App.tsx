@@ -1,9 +1,10 @@
-import { createContext, useState } from 'react';
+import { lazy, createContext, useState } from 'react';
 import { LanguageContext } from './@types/appTypes';
-import Header from './layout/Header';
-import Preview from './layout/Preview';
-import Works from './layout/Works';
-import Footer from './layout/Footer';
+
+const Header = lazy(() => import('./layout/Header'));
+const Preview = lazy(() => import('./layout/Preview'));
+const Works = lazy(() => import('./layout/Works'));
+const Footer = lazy(() => import('./layout/Footer'));
 
 const LanguageApp: LanguageContext = {
 	language: 'PL',
