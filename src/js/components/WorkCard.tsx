@@ -1,12 +1,12 @@
 import { useContext } from 'react';
 import { LazyLoadComponent } from 'react-lazy-load-image-component';
-import { Language } from '../App';
+import { LanguageContext } from '../App';
 import { changeLanguage } from '../util/changeLanguage';
 import { CardType } from '../@types/appTypes';
 
 function WorkCard(item: CardType) {
 	const { img, text } = item;
-	const { language } = useContext(Language);
+	const { language } = useContext(LanguageContext);
 	const changeLanguages = changeLanguage.bind(language);
 
 	return (

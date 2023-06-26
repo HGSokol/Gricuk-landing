@@ -1,4 +1,4 @@
-export interface LanguageContext {
+export interface LanguageContextType {
 	language: string;
 	setLanguage: (language: string) => void;
 }

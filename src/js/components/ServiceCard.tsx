@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { LazyLoadComponent } from 'react-lazy-load-image-component';
 import { CardType } from '../@types/appTypes';
-import { Language } from '../App';
+import { LanguageContext } from '../App';
 import { changeLanguage } from '../util/changeLanguage';
 import IMG1 from '../../assets/car-accessories-with-copy-space.jpg';
 import IMG2 from '../../assets/tiler-working-on.jpg';
@@ -19,7 +19,7 @@ const data: CardType[] = [
 ];
 
 function ServiceCard() {
-	const { language } = useContext(Language);
+	const { language } = useContext(LanguageContext);
 	const changeLanguages = changeLanguage.bind(language);
 
 	return (

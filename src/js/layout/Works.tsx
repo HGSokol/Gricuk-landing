@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import WorkCard from '../components/WorkCard';
-import { Language } from '../App';
+import { LanguageContext } from '../App';
 import { CardType } from '../@types/appTypes';
 import { changeLanguage } from '../util/changeLanguage';
 import IMG1 from '../../assets/man-installing-laminated.jpg';
@@ -56,7 +56,7 @@ const data: CardType[] = [
 ];
 
 function Works() {
-	const { language } = useContext(Language);
+	const { language } = useContext(LanguageContext);
 	const changeLanguages = changeLanguage.bind(language);
 	return (
 		<div className="lg:px-[65rem] lg:mb-[100rem]">

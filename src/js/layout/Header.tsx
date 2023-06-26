@@ -1,8 +1,8 @@
 import { useContext } from 'react';
-import { Language } from '../App';
+import { LanguageContext } from '../App';
 
 function Header() {
-	const { language, setLanguage } = useContext(Language);
+	const { language, setLanguage } = useContext(LanguageContext);
 
 	function updateLanguage(lang: string) {
 		setLanguage(lang);
