@@ -1,4 +1,4 @@
-import { lazy, createContext, useState } from 'react';
+import { lazy, Suspense, createContext, useState } from 'react';
 import { LanguageContextType } from './@types/appTypes';
 
 const Header = lazy(() => import('./layout/Header'));
@@ -24,10 +24,12 @@ function App() {
 				setLanguage,
 			}}>
 			<div className="font-[Poppins]">
-				<Header />
-				<Preview />
-				<Works />
-				<Footer />
+				<Suspense fallback={<>...loading(svg)</>}>
+					<Header />
+					<Preview />
+					<Works />
+					<Footer />
+				</Suspense>
 			</div>
 		</LanguageContext.Provider>
 	);

@@ -9,22 +9,22 @@ const img: JSX.Element[] = [
 	<img
 		src={IMG1}
 		alt="sliderIMG1"
-		className="lg:w-[655rem] lg:h-[525rem] bg-gray-200 text-[black] lg:text-[20rem] object-cover"
+		className="md:w-[655rem] md:h-[525rem] bg-gray-200 text-[black] md:text-[20rem] object-cover"
 	/>,
 	<img
 		src={IMG2}
 		alt="sliderIMG2"
-		className="lg:w-[655rem] lg:h-[525rem] bg-gray-200 text-[black] lg:text-[20rem] object-cover"
+		className="md:w-[655rem] md:h-[525rem] bg-gray-200 text-[black] md:text-[20rem] object-cover"
 	/>,
 	<img
 		src={IMG3}
 		alt="sliderIMG3"
-		className="lg:w-[655rem] lg:h-[525rem] bg-gray-200 text-[black] lg:text-[20rem] object-cover"
+		className="md:w-[655rem] md:h-[525rem] bg-gray-200 text-[black] md:text-[20rem] object-cover"
 	/>,
 	<img
 		src={IMG4}
 		alt="sliderIMG4"
-		className="lg:w-[655rem] lg:h-[525rem] bg-gray-200 text-[black] lg:text-[20rem] object-cover"
+		className="md:w-[655rem] md:h-[525rem] bg-gray-200 text-[black] md:text-[20rem] object-cover"
 	/>,
 ];
 
@@ -48,20 +48,20 @@ function Slider() {
 
 	return (
 		<>
-			<div className="relative w-full h-[200rem] rounded-[12rem] lg:w-[655rem] lg:h-[525rem] lg:rounded-[12rem] lg:m-auto lg:flex lg:items-center overflow-hidden box-border">
+			<div className="relative w-full h-[200rem] rounded-[12rem] md:w-[655rem] md:h-[525rem] md:rounded-[12rem] md:m-auto md:flex md:items-center overflow-hidden box-border">
 				<LazyLoadComponent>
 					<div
-						className="absolute lg:w-full lg:h-full transition-all duration-[500ms] -translate-x-[100%]"
+						className="absolute md:w-full md:h-full transition-all duration-[500ms] -translate-x-[100%]"
 						key={prevImgIndex}>
 						{img[prevImgIndex]}
 					</div>
 					<div
-						className="absolute lg:w-full lg:h-full transition-all duration-[500ms]"
+						className="absolute md:w-full md:h-full transition-all duration-[500ms]"
 						key={activeIndex}>
 						{img[activeIndex]}
 					</div>
 					<div
-						className="absolute lg:w-full lg:h-full transition-all duration-[500ms] translate-x-[100%] "
+						className="absolute md:w-full md:h-full transition-all duration-[500ms] translate-x-[100%] "
 						key={nextImgIndex}>
 						{img[nextImgIndex]}
 					</div>

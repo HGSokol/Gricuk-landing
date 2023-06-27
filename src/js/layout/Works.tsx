@@ -59,12 +59,12 @@ function Works() {
 	const { language } = useContext(LanguageContext);
 	const changeLanguages = changeLanguage.bind(language);
 	return (
-		<div className="lg:px-[65rem] lg:mb-[100rem]">
-			<div className="lg:mb-[60rem] lg:text-[40rem] lg:font-[700]">
+		<div className="px-[20rem] md:px-[65rem] mb-[50rem] md:mb-[100rem]">
+			<div className="mb-[12rem] md:mb-[60rem] text-[24rem] md:text-[40rem] md:font-[700]">
 				{changeLanguages(['Wykonane ', 'Arbeit '])}
 				<span className="text-[#FF800B]">{changeLanguages(['prace:', 'erledigt:'])}</span>
 			</div>
-			<div className="lg:h-[568rem] flex flex-col lg:flex-wrap gap-y-[10rem] lg:gap-y-[25rem] lg:gap-x-[36rem]">
+			<div className="md:h-[568rem] flex flex-col md:flex-wrap gap-y-[10rem] md:gap-y-[25rem] md:gap-x-[36rem]">
 				{data.map((item, index) => {
 					return (
 						<div key={index}>

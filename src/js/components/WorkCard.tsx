@@ -10,29 +10,29 @@ function WorkCard(item: CardType) {
 	const changeLanguages = changeLanguage.bind(language);
 
 	return (
-		<div className="cursor-pointer transition-all group duration-[200ms] w-full h-[60rem] lg:w-[637rem] lg:h-[166rem] lg:rounded-[18rem] lg:p-[25rem] flex flex-row gap-[12rem] lg:gap-[30rem] bg-[#FAFAFA] hover:bg-[#FFE6D1]">
+		<div className="cursor-pointer transition-all group duration-[200ms] w-full h-[300rem] md:w-[637rem] md:h-[166rem] md:rounded-[18rem] p-[12rem] md:p-[25rem] flex flex-col md:flex-row gap-[5rem] md:gap-[30rem] bg-[#FAFAFA] hover:bg-[#FFE6D1]">
 			<LazyLoadComponent>
 				<img
 					src={img}
 					alt="montaz"
-					className="rounded-[12rem] w-[40%] h-full lg:rounded-[10rem] lg:w-[172rem] lg:h-[116rem] bg-[black] object-cover"
+					className="rounded-[12rem] w-full h-[70%] md:rounded-[10rem] md:w-[172rem] md:h-[116rem] bg-[black] object-cover"
 				/>
 			</LazyLoadComponent>
-			<div className="group-hover:hidden text-[#272727] text-[11rem] lg:text-[18rem] lg:leading-[160%] lg:tracking-[0.18rem] w-[60%] lg:w-[385rem] lg:flex lg:items-center">
+			<div className="group-hover:hidden text-[#272727] text-[14rem] md:text-[18rem] md:leading-[160%] md:tracking-[0.18rem] w-full md:w-[385rem] md:flex md:items-center">
 				{changeLanguages(text)}
 			</div>
-			<div id="hidden-block" className="hidden group-hover:block lg:h-[98rem] lg:my-auto">
-				<div className="lg:mb-[10rem] lg:font-[600] text-[11rem] lg:text-[18rem] text-[#272727]">
+			<div id="hidden-block" className="hidden group-hover:block md:h-[98rem] md:my-auto">
+				<div className="mb-[5rem] font-[500] text-[16rem] md:text-[18rem] text-[#272727]">
 					{changeLanguages([
 						'Chcesz wiedzieć więcej? Dzwonić!',
 						'Möchten Sie mehr wissen? Forderung!',
 					])}
 				</div>
 				<div className="">
-					<div className="lg:flex lg:flex-row lg:gap-[6rem] lg:items-center lg:mb-[3rem]">
+					<div className="flex flex-row gap-[6rem] items-center md:mb-[3rem]">
 						<div>
 							<svg
-								className="w-[12rem] lg:w-[24rem] h-[12rem] lg:h-[24rem]"
+								className="w-[15rem] md:w-[24rem] h-[15rem] md:h-[24rem]"
 								viewBox="0 0 24 24"
 								fill="none"
 								xmlns="http://www.w3.org/2000/svg">
@@ -42,14 +42,14 @@ function WorkCard(item: CardType) {
 								/>
 							</svg>
 						</div>
-						<div className="lg:font-[500] text-[10rem] lg:text-[18rem] lg:leading-[160%] lg:tracking-[0.18rem]">
+						<div className="md:font-[500] text-[12rem] md:text-[18rem] md:leading-[160%] md:tracking-[0.18rem]">
 							+ 48 577 241 680
 						</div>
 					</div>
-					<div className="lg:flex lg:flex-row lg:gap-[6rem] lg:items-center">
+					<div className="flex flex-row gap-[6rem] items-center">
 						<div>
 							<svg
-								className="w-[12rem] lg:w-[24rem] h-[12rem] lg:h-[24rem]"
+								className="w-[15rem] md:w-[24rem] h-[15rem] md:h-[24rem]"
 								viewBox="0 0 24 24"
 								fill="none"
 								xmlns="http://www.w3.org/2000/svg">
@@ -59,7 +59,7 @@ function WorkCard(item: CardType) {
 								/>
 							</svg>
 						</div>
-						<div className="lg:font-[500] lg:text-[18rem] lg:leading-[160%] lg:tracking-[0.18rem]">
+						<div className="md:font-[500] text-[12rem] md:text-[18rem] md:leading-[160%] md:tracking-[0.18rem]">
 							+ 49 152 256 81078
 						</div>
 					</div>

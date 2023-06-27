@@ -9,16 +9,16 @@ function Header() {
 		localStorage.setItem('language', lang);
 	}
 	return (
-		<div className="px-[20rem] mb-[40rem] lg:px-[65rem] lg:mb-[86rem]">
-			<div className="order-1 w-full h-[70rem] lg:h-[100rem] flex flex-row flex-wrap lg:flex-row items-center">
-				<div className="mr-[120rem] flex flex-row lg:mr-[123rem] items-center gap-[8rem]">
-					<div className="h-[8rem] w-[8rem] lg:h-[9rem] lg:w-[9rem] rounded-full bg-[#FF800B]"></div>
-					<div className="text-[16rem] lg:text-[18rem] font-[600] text-[#272727] lg:leading-[160%]">
+		<div className="px-[20rem] mb-[40rem] md:px-[65rem] md:mb-[86rem]">
+			<div className="order-1 w-full h-[70rem] md:h-[100rem] flex flex-row flex-wrap md:flex-row items-center">
+				<div className="mr-[120rem] flex flex-row md:mr-[123rem] items-center gap-[8rem]">
+					<div className="h-[8rem] w-[8rem] md:h-[9rem] md:w-[9rem] rounded-full bg-[#FF800B]"></div>
+					<div className="text-[16rem] md:text-[18rem] font-[600] text-[#272727] md:leading-[160%]">
 						Grigorij Gricuk
 					</div>
 				</div>
-				<div className="order-3 lg:order-2 flex flex-row gap-[12rem] lg:gap-[20rem] flex-wrap text-[11rem] lg:text-[16rem] lg:mr-[41rem]">
-					<div className="mr-[20rem] lg:mr-[0rem]">J.Franz 02@t-online.de</div>
+				<div className="order-3 md:order-2 flex flex-row gap-[12rem] md:gap-[20rem] flex-wrap text-[11rem] md:text-[16rem] md:mr-[41rem]">
+					<div className="mr-[20rem] md:mr-[0rem]">J.Franz 02@t-online.de</div>
 					<a
 						href="mailto:grishapolandd@gmail.com"
 						target="_blank"
@@ -30,7 +30,7 @@ function Header() {
 					<div className="font-[600]">+ 49 152 256 81078</div>
 					<div className="font-[600]">+ 0 63 96 99 32 63</div>
 				</div>
-				<div className="order-2 lg:order-3 flex items-center justify-center w-[70rem] lg:w-[90rem] flex-row">
+				<div className="order-2 md:order-3 flex items-center justify-center w-[70rem] md:w-[90rem] flex-row">
 					<div
 						onClick={() => updateLanguage('PL')}
 						className={`${
