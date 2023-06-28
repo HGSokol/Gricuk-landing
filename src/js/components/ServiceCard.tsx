@@ -23,31 +23,8 @@ function ServiceCard() {
   const changeLanguages = changeLanguage.bind(language);
 
   return (
-    <div className="w-full h-[420rem] md:w-[600rem] md:h-[440rem] md:my-auto">
-      <div className={`${language === 'GER' ? ' md:mb-[40rem] ' : 'md:mb-[60rem] '} mb-[20rem]`}>
-        <div
-          className={`${
-            language === 'GER' ? ' text-[23rem] md:text-[42rem]' : 'text-[28rem] md:text-[52rem]'
-          } font-[700]`}
-        >
-          <span className="text-[#FF800B]">{changeLanguages(['Świadczymy ', 'Wir bieten '])}</span>
-          {changeLanguages([
-            'usługi po naprawie i renowacji',
-            'Dienstleistungen nach Reparatur und Renovierung an',
-          ])}
-        </div>
-        <div
-          className={`${
-            language === 'GER' ? 'text-[16rem] md:text-[18rem]' : 'text-[16rem] md:text-[20rem]'
-          } text-[#272727]`}
-        >
-          {changeLanguages([
-            'Jakość jest na pierwszym miejscu!',
-            'Qualität steht an erster Stelle!',
-          ])}
-        </div>
-      </div>
-      <div className=" flex flex-row w-full md:flex-col flex-wrap h-[300rem] md:h-[230rem] md:gap-x-[62rem] md:gap-[22rem]">
+    <div className="w-full h-[280rem] md:w-[600rem] md:h-[440rem] md:my-auto">
+      <div className=" flex flex-row w-full md:flex-col flex-wrap h-[260rem] md:h-[230rem] md:gap-x-[44rem] md:gap-[22rem]">
         {data.map((item, index) => {
           return (
             <a
@@ -55,7 +32,7 @@ function ServiceCard() {
               href={item.link && '#workСategories'}
               className={`${
                 item.link && ' cursor-pointer'
-              } group flex flex-col md:flex-row mb-[14rem] gap-[8rem] md:items-center w-[50%] md:w-[285rem]`}
+              } group flex flex-col md:flex-row gap-[8rem] md:items-center w-[50%]`}
             >
               {item.link === 'link' ? (
                 <div className=" duration-500 group-hover:bg-[#FF800B] h-[40rem] md:h-[46rem] w-[40rem] md:w-[46rem] rounded-full border-[1rem] border-[#FF800B] flex items-center justify-center mx-auto md:mx-[0rem]">
