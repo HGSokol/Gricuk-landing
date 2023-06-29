@@ -12,8 +12,8 @@ function WorkCard(item: CardType) {
   return (
     <div
       className={`${
-        link ? ' bg-[#FFE6D1]' : ' bg-[#FAFAFA]'
-      } border-[1rem] border-[#E9E9E9] transition-all group duration-[200ms] w-full h-[300rem] md:w-[637rem] md:h-[166rem] rounded-[12rem] md:rounded-[18rem] p-[16rem] md:p-[25rem] flex flex-col md:flex-row gap-[5rem] md:gap-[30rem]`}
+        link ? ' bg-[#FFF9F3] border-[#FFE6D1]  ' : ' bg-[#FAFAFA] border-[#E9E9E9]'
+      } border-[1rem]  transition-all group duration-[200ms] w-full h-[300rem] md:w-[637rem] md:h-[166rem] rounded-[12rem] md:rounded-[18rem] p-[16rem] md:p-[25rem] flex flex-col md:flex-row gap-[5rem] md:gap-[30rem]`}
     >
       <LazyLoadComponent>
         <img
