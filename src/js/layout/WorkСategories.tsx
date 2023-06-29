@@ -52,6 +52,7 @@ const data: CardType[] = [
       'Różnorodna stolarka, łaźnie parowe, łaźnie, sauny',
       'Eine Vielzahl von Holzarbeiten, Dampfbädern, Bädern, Saunen',
     ],
+    link: 'link',
   },
 ];
 
